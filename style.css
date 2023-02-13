@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('font/Norse-Bold.otf') format('woff2');
+  }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,6 +55,9 @@ table {
 /* main css starts here */
 html, body {
     height:100vh;
+    width: 100%;
+    background-color: rgba(236, 235, 235, 0.75);
+
 }
 
 #main-container {
@@ -82,7 +90,10 @@ html, body {
 
 #logo {
     /* border: 5px solid black; */
+    font-family: NorseBold;
+    font-size: 75px;
     background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 0;
     /* color: antiquewhite; */
     position:absolute;
     display: flex;
@@ -104,7 +115,7 @@ html, body {
 
 #logo>img {
     /* position: relative; */
-    height: 20vh;
+    height: 150px;
 
     /* background-color: rebeccapurple; */
 }
@@ -123,25 +134,26 @@ img {
 
 #content2 {
     /* border: 5px solid saddlebrown; */
-    position: relative;
-    height: 100vh;
+    /* position: relative; */
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 #container-2 {
-    position: relative;
-    border: 5px solid red;
+    /* position: relative; */
+    /* border: 5px solid red; */
+    background-color: rgba(236, 235, 235, 0.75);
     /* height: 33vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    /* flex: 1; */
     font-size: large;
     font-weight: 600;
-    width: 100vh;
+    /* width: 100vh; */
 }
 
 #intro-container {
@@ -155,24 +167,33 @@ img {
     padding-top: 30px;
 }
 
-#form-container {
-    border: 5px solid seagreen;
-    flex: 1;
-    width: 100vh;
+#form-c1 {
+    /* border: 5px solid seagreen; */
+    background-color: white;
+    border-bottom: 1px solid grey;
+    padding-bottom: 12.5px;
+    /* flex: 1; */
+    /* box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3); */
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* flex: 1; */
+    /* width: 100vh; */
+   
 }
 
-#form-container>h2 {
+#form-c1>h2 {
   
-    padding-bottom: 20px;
+ padding: 25px;
+ /* padding-left: 25px; */
+    font-size: 24px;
+    font-weight: 600;
 }
 
-/* form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
 
-form > #name-container, #contact-container, #password-container {
+
+#form-c1 > #name-container, #contact-container, #password-container {
     display: flex;
     
     /* justify-content: center; */
@@ -183,5 +204,50 @@ form > #name-container, #contact-container, #password-container {
     display: flex;
     flex-direction: column;
     padding: 0 25px;
+    padding-bottom: 12.5px;
+    /* font-size: 16px; */
     /* justify-content: center; */
+}
+
+#confirm-container {
+    /* border: 5px solid gold; */
+    padding: 0 25px;
+    padding-top: 25px;
+    /* display: flex;
+    flex-direction: column; */
+    /* height: 20vh; */
+    /* flex: 1; */
+}
+
+#confirm-container > h3 {
+    padding-top: 25px;
+    
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    padding-left: 5px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+input[type=submit] {
+    font-size: large;
+    width: 200px;
+    background-color: #7b8482;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    background-color:  #364646;
 }

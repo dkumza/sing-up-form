@@ -48,46 +48,55 @@
         </div>
 
         <div id="form-container">
-          <h2>Please Sing-up!</h2>
           <form action="">
-            <div id="name-container">
-              <div id="name-c1">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name" required />
+            <div id="form-c1">
+              <h2>Please Sing-up!</h2>
+              <div id="name-container">
+                <div id="name-c1">
+                  <label for="first-name">FIRST NAME</label>
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    required
+                  />
+                </div>
+                <div id="name-c2">
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" name="last-name" id="last-name" required />
+                </div>
               </div>
-              <div id="name-c2">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name" required />
+              <div id="contact-container">
+                <div id="contact-c1">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div id="contact-c2">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="tel"
+                    pattern="[0-9]{9}"
+                    required
+                  />
+                </div>
+              </div>
+              <div id="password-container">
+                <div id="password-c1">
+                  <label for="password">PASSWORD</label>
+                  <input type="password" name="password" id="password" />
+                </div>
+                <div id="password-c2">
+                  <label for="password">CONFIRM PASSWORD</label>
+                  <input type="password" name="confirm" id="password1" />
+                </div>
               </div>
             </div>
-            <div id="contact-container">
-              <div id="contact-c1">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" required />
-              </div>
-              <div id="contact-c2">
-                <label for="phone">PHONE NUMBER</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="tel"
-                  pattern="[0-9]{9}"
-                  required
-                />
-              </div>
-            </div>
-            <div id="password-container">
-              <div id="password-c1">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
-              </div>
-              <div id="password-c2">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password1" />
-              </div>
-            </div>
+
             <div id="confirm-container">
-              <input type="submit" />
+              <input type="submit" value="Create Account" />
+              <h3>Already have an account? Log in</h3>
             </div>
           </form>
         </div>
