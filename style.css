@@ -86,7 +86,7 @@ body {
 #container-1 > img {
     height: 100vh;
     /* border: 5px solid green; */
-    width: 400px;
+    width: 500px;
     /* flex: 1; */
 
 }
@@ -223,7 +223,7 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 860px) {
-   #container-1 {
+   #content1 {
     display: none;
    }
   }
